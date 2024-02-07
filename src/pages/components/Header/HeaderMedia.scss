@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+  .header {
+    padding: 1.6rem 0;
+  }
+}
+@media (max-width: 992px) {
+  .header__top {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .header__info {
+    margin-right: 1.6rem;
+  }
+  .header__socials {
+    margin-right: 1.6rem;
+  }
+}
