@@ -11,6 +11,13 @@ const Header: FC = (): JSX.Element => {
           <div className="header__top-body">
             <div className="header__contact">
               <div className="header__info">
+                <iframe
+                  className="header__yandex-rating"
+                  src="https://yandex.ru/sprav/widget/rating-badge/1385530723?type=rating"
+                  width="150"
+                  height="59"
+                  frameBorder="0"
+                ></iframe>
                 <div className="header__info-icon">
                   <img
                     src="https://city-jaluzi.ru/assets/img/location.svg"
@@ -41,10 +48,18 @@ const Header: FC = (): JSX.Element => {
                 </a>
               </div>
               <div className="header__socials">
-                <a href="#" className="header__social">
+                <a
+                  href="https://api.whatsapp.com/send?phone=998974360640"
+                  target="_blank"
+                  className="header__social"
+                >
                   <Sprite id="whatsapp" />
                 </a>
-                <a href="#" className="header__social">
+                <a
+                  href="https://t.me/username_shakha"
+                  target="_blank"
+                  className="header__social"
+                >
                   <Sprite id="telegram" />
                 </a>
               </div>
