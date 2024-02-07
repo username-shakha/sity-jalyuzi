@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { Sprite } from "../../../components/helper/Sprite";
 
 import "./Header.scss";
 import "./HeaderMedia.scss";
+import Sprite from "@/components/helper/Sprite/index";
 
-const Header: FC = () => {
+const Header: FC = (): JSX.Element => {
   return (
     <div className="header">
       <section className="header__top">

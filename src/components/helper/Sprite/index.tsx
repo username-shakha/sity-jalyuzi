@@ -4,10 +4,11 @@ interface Props {
   id: "telegram" | "whatsapp";
 }
 
-export const Sprite = ({ id }: Props) => {
+const Sprite = ({ id }: Props): JSX.Element => {
   return (
     <svg>
       <use xlinkHref={`${href}#${id}`}></use>
     </svg>
   );
 };
+export default Sprite;
