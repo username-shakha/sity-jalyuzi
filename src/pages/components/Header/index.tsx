@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Sprite } from "../../../components/helper/Sprite";
 
 import "./Header.scss";
 import "./HeaderMedia.scss";
@@ -41,8 +42,12 @@ const Header: FC = () => {
                 </a>
               </div>
               <div className="header__socials">
-                <a href="#" className="header__social"></a>
-                <a href="#" className="header__social"></a>
+                <a href="#" className="header__social">
+                  <Sprite id="whatsapp" />
+                </a>
+                <a href="#" className="header__social">
+                  <Sprite id="telegram" />
+                </a>
               </div>
               <div className="header__buttons">
                 <div className="header__button">
