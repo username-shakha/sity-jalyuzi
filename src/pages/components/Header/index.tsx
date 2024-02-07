@@ -36,6 +36,7 @@ const Header: FC = (): JSX.Element => {
                   />
                 </div>
                 <a
+                  target="_blank"
                   href="mailto:info@city-jaluzi.ru"
                   className="header__info-text"
                 >
@@ -43,7 +44,11 @@ const Header: FC = (): JSX.Element => {
                 </a>
               </div>
               <div className="header__info">
-                <a href="tel:+7 (495) 542-76-98" className="header__info-text">
+                <a
+                  href="tel:+7 (495) 542-76-98"
+                  target="_blank"
+                  className="header__info-text"
+                >
                   +7 (495) 542-76-98
                 </a>
               </div>
