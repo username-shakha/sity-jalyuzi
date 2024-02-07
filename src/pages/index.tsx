@@ -1,10 +1,14 @@
 import { FC } from "react";
+import { Outlet } from "react-router-dom";
 
 const Layout: FC = () => {
   return (
-    <>
-      <h1>Layout</h1>
-    </>
+    <div className="wrapper">
+      <div className="push"></div>
+      <main className="main">
+        <Outlet />
+      </main>
+    </div>
   );
 };
 
