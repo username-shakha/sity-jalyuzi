@@ -1,8 +1,7 @@
 import { FC } from "react";
-
+import Sprite from "@/components/helper/Sprite/index";
 import "./Header.scss";
 import "./HeaderMedia.scss";
-import Sprite from "@/components/helper/Sprite/index";
 
 const Header: FC = (): JSX.Element => {
   return (
