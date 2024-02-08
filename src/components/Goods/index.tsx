@@ -1,17 +1,25 @@
+import useFetch from "@/hooks/useFetch";
 import Card from "./components/Card";
+import { IProducts } from "@/interfaces";
 import "./style.scss";
 
 const Goods = () => {
+  const URL = "https://657bc4a7394ca9e4af14b9a3.mockapi.io/products";
+  //REST API CAll
+  const { data, loading, error } = useFetch<IProducts[]>(URL);
+
   return (
     <>
       <section className="we-produce">
         <div className="we-produce__container">
-          <h2 className="we-produce__title title-box">Мы производим</h2>
+          <h2 className="we-produce__title title-box">
+            Мы производим {loading && <strong> Loading...</strong>}{" "}
+            {error && <strong> {error.message}...</strong>}
+          </h2>
           <div className="we-produce__inner">
-            {/* {!!jalousie.length &&
-              jalousie.map((product, index) => (
-                <Card key={index} loading={loading} product={product} />
-              ))} */}
+            {data?.map((product: IProducts) => (
+              <Card key={product.id} product={product} />
+            ))}
             <div className="we-produce__button">
               <button className="we-produce__btn">
                 <a href="">

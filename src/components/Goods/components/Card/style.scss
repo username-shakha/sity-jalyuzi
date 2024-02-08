@@ -18,7 +18,7 @@
     min-height: 27rem;
   }
 
-  &____item-preview {
+  &__item-preview {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,9 +95,35 @@
   opacity: 1;
 }
 
+.buy__item-discount {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4285714286;
+  color: #38be76;
+  padding: 0 0.8rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0.8rem;
+  z-index: 2;
+  background: #ffffff;
+  border-radius: 2.4rem;
+}
+
+.buy__item-old {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4285714286;
+  text-decoration-line: line-through;
+  color: #a3a3a3;
+}
+
 @media (max-width: 954px) {
   .we-produce__item-photo {
     min-height: 25rem;
+  }
+
+  .buy__item-old {
+    font-size: 1.2rem;
   }
   .we-produce__item-discription {
     width: 13.5rem;
