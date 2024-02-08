@@ -2,6 +2,7 @@ import { FC } from "react";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 import Goods from "@/components/Goods";
+import Info from "@/components/Info";
 
 const Home: FC = (): JSX.Element => {
   return (
@@ -9,6 +10,7 @@ const Home: FC = (): JSX.Element => {
       <Hero />
       <Categories />
       <Goods />
+      <Info />
     </>
   );
 };
