@@ -4,6 +4,7 @@ import Categories from "@/components/Categories";
 import Goods from "@/components/Goods";
 import Info from "@/components/Info";
 import Partners from "@/components/Partners";
+import Article from "@/components/Article";
 
 const Home: FC = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const Home: FC = (): JSX.Element => {
       <Goods />
       <Info />
       <Partners />
+      <Article />
     </>
   );
 };
