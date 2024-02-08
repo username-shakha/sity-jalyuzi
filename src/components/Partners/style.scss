@@ -1,0 +1,127 @@
+.clients {
+  margin-top: 8rem;
+}
+@media (max-width: 480px) {
+  .clients {
+    margin-top: 4.8rem;
+  }
+}
+
+.clients__title {
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 480px) {
+  .clients__title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.clients__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -1.6rem;
+}
+@media (max-width: 954px) {
+  .clients__inner {
+    margin: 0 -0.4rem;
+  }
+}
+
+.clients__col {
+  flex: 0 1 14.28%;
+  margin-bottom: 3.2rem;
+  padding: 0 1.6rem;
+}
+@media (max-width: 1024px) {
+  .clients__col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 16.666%;
+    flex: 0 1 16.666%;
+  }
+}
+@media (max-width: 954px) {
+  .clients__col {
+    padding: 0 0.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .clients__col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+  }
+}
+@media (max-width: 480px) {
+  .clients__col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.clients__item {
+  background: #f3f3f1;
+  border-radius: 1.6rem;
+  width: 100%;
+  height: 100%;
+  min-height: 8.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .clients__item {
+    min-height: 6.2rem;
+  }
+}
+
+.clients__item-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+.clients__item-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: darken;
+}
+@media (max-width: 480px) {
+  .clients__item-photo {
+    height: auto;
+  }
+  /* .clients__item-photo img {
+       width: 7rem; 
+    }  */
+  .clients__item-photo--min img {
+    width: 6.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .clients__item-photo--big img {
+    width: 4rem;
+  }
+}
