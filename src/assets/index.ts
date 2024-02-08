@@ -16,10 +16,8 @@ import client12 from "./clientslogo/client-12.png";
 import client13 from "./clientslogo/client-13.png";
 import client14 from "./clientslogo/client-14.svg";
 
-export {
-  banner1,
-  banner2,
-  banner3,
+export { banner1, banner2, banner3 };
+export const clientslogo = [
   client1,
   client2,
   client3,
@@ -34,4 +32,4 @@ export {
   client12,
   client13,
   client14,
-};
+];
