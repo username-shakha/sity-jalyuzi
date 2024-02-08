@@ -1,4 +1,5 @@
 import Card from "./components/Card";
+import "./style.scss";
 
 const Goods = () => {
   return (

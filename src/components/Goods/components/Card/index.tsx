@@ -1,3 +1,5 @@
+import "./style.scss";
+
 const Card = () => {
   return <h1>Goods Card</h1>;
 };
