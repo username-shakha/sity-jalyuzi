@@ -157,6 +157,6 @@ address {
 
 @media (max-width: 480px) {
   .push {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
