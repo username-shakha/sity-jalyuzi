@@ -4,7 +4,7 @@ import "./Categories.scss";
 
 const Categories = (): JSX.Element => {
   return (
-    <div className="categories">
+    <section className="categories">
       <div className="categories__container">
         <h2 className="categories__title title-box">
           Самые покупаемые категории товаров
@@ -21,7 +21,7 @@ const Categories = (): JSX.Element => {
             ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
