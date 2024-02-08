@@ -1,8 +1,19 @@
+@media (max-width: 954px) {
+  .card__item-kind {
+    left: 1rem;
+    font-size: 1rem;
+    bottom: 1rem;
+  }
+}
+
 @media (max-width: 860px) {
   .card {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 33.333%;
     flex: 0 1 33.333%;
+  }
+  .card__item-kind {
+    font-size: 1.2rem;
   }
 }
 
@@ -23,7 +34,10 @@
     padding: 0 0.4rem;
     margin-bottom: 0.8rem;
   }
-
+  .card__item-kind {
+    font-size: 1rem;
+    padding: 0 0.8rem;
+  }
   .card__item-info {
     top: 0.8rem;
     left: 0.8rem;
