@@ -1,0 +1,366 @@
+// modal
+// catalog-modal
+// menu__close
+
+#catalog-modal {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#catalog-modal .modal__dialog {
+  background: none;
+  width: 80%;
+  position: relative;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@media (max-width: 954px) {
+  #catalog-modal .modal__dialog {
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 1.5rem;
+  }
+}
+
+#cost-modal .modal__dialog {
+  max-height: 24.8rem;
+  margin-top: auto;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3000;
+  display: none;
+
+  &__dialog {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    padding-bottom: 5.4rem;
+  }
+
+  &__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  &__sidebar {
+    width: 30%;
+    padding: 0 2rem 0 0;
+    padding-top: 2.8rem;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    min-height: 100%;
+    padding-bottom: 5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &__sidebar-col {
+    padding-bottom: 3rem;
+  }
+
+  &__sidebar-item {
+    padding: 0.4rem 1.6rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-radius: 8px;
+    width: 95%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__sidebar-item-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__sidebar-icon {
+    margin-right: 1.3rem;
+  }
+
+  &__sidebar-text {
+    font-size: 1.6rem;
+    line-height: 1.125;
+    color: #161314;
+  }
+
+  &__mobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1100;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+  }
+
+  &__mobile-content {
+    margin-top: 3.6rem;
+  }
+
+  &__mobile-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #161314;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 2.5rem;
+      background-image: url("https://city-jaluzi.ru/assets/img/menu/arrow.svg");
+      background-repeat: no-repeat;
+      display: block;
+      margin-right: 1.2rem;
+    }
+  }
+  &__mobile-item {
+    font-size: 1.6rem;
+    line-height: 1.375;
+    color: #161314;
+    margin-top: 3.3rem;
+  }
+
+  &__suptitle {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #161314;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__block {
+    width: 71.8%;
+    padding: 2.8rem 2.6rem 0 2.1rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    height: 100%;
+    border-left: 2px solid #f3f3f1;
+  }
+
+  &__block-body {
+    width: 60%;
+  }
+
+  &__body-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 954px) {
+  .modal__block-body {
+    width: 100%;
+  }
+  .modal__body-inner {
+    display: none;
+  }
+}
+
+@media (max-width: 954px) {
+  .modal__block {
+    display: none;
+  }
+}
+
+.modal__list {
+  width: 40%;
+  margin-bottom: 2.4rem;
+}
+.modal__list li {
+  margin-bottom: 1rem;
+}
+.modal__list li:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 954px) {
+  .modal__list {
+    width: 100%;
+  }
+}
+
+.modal__mobile.hide {
+  display: none;
+}
+
+.modal__mobile-title.hide {
+  display: none;
+}
+
+.modal__sidebar-icon svg {
+  fill: none;
+  stroke: #a3a3a3;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media (max-width: 954px) {
+  .modal__mobile--visible {
+    display: block;
+  }
+  .modal__sidebar-item {
+    padding: 0;
+    margin-bottom: 3.2rem;
+    position: relative;
+  }
+  .modal__sidebar-item:hover {
+    background: none;
+  }
+  .modal__sidebar-item:hover > .modal__block {
+    display: none;
+  }
+  .modal__sidebar-item:hover .modal__sidebar-icon svg {
+    stroke: #a3a3a3;
+  }
+  .modal__sidebar-item:hover .modal__sidebar-text {
+    color: #161314;
+  }
+  .modal__sidebar-item:after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-image: url("https://city-jaluzi.ru/assets/img/menu/down.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+.modal__sidebar-col:hover .modal__sidebar-item {
+  background: #38be76;
+}
+
+.modal__sidebar-col:hover .modal__sidebar-item > .modal__block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media (max-width: 954px) {
+  .modal__sidebar-col:hover .modal__sidebar-item > .modal__block {
+    display: none;
+  }
+}
+@media (max-width: 954px) {
+  .modal__sidebar-col:hover .modal__sidebar-item {
+    background: none;
+  }
+}
+.modal__sidebar-col:hover .modal__sidebar-icon svg {
+  stroke: #fff;
+}
+.modal__sidebar-col:hover .modal__sidebar-text {
+  color: #fff;
+}
+.modal__sidebar-col--first:hover .modal__sidebar-item {
+  background: #38be76;
+}
+.modal__sidebar-col--first:hover .modal__sidebar-item > .modal__block {
+  display: block;
+}
+@media (max-width: 954px) {
+  .modal__sidebar-col--first:hover .modal__sidebar-item > .modal__block {
+    display: none;
+  }
+}
+@media (max-width: 954px) {
+  .modal__sidebar-col--first:hover .modal__sidebar-item {
+    background: none;
+  }
+}
+.modal__sidebar-col--first:hover .modal__sidebar-icon svg {
+  stroke: #fff;
+}
+.modal__sidebar-col--first:hover .modal__sidebar-text {
+  color: #fff;
+}
+
+@media (max-width: 954px) {
+  .modal__sidebar {
+    border-right: 0;
+    padding: 2.8rem 0 5rem 0;
+    width: 100%;
+  }
+}
+
+.modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal.show .navigation__item svg {
+  stroke: red;
+}
+
+.modal.hide {
+  display: none;
+}
+
+.menu__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+}
+
+.menu__close svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 954px) {
+  .menu__close {
+    display: block;
+  }
+}
+
+.modal__sidebar-item-block-hide {
+  display: none;
+}
