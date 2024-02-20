@@ -45,13 +45,69 @@ const Delivery = () => {
               <div className="information__content-element">
                 <div className="information__content-block">
                   <div className="information__item">
+                    <div className="information__orange"></div>
+                    <div className="information__item-body">
+                      <div className="information__item-cost">
+                        В пределах МКАД — бесплатно
+                      </div>
+                      <div className="information__item-text">
+                        <p>
+                          Если сумма заказа менее 10 000 ₽, стоимость доставки -
+                          681 ₽
+                        </p>
+                        <p>
+                          Крупногабаритные (более 1,75 м) и тяжелые (от 15 кг)
+                          заказы доставляем только транспортом по тарифам
+                          сервиса "Достависта"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="information__item">
                     <div className="information__green"></div>
                     <div className="information__item-body">
                       <div className="information__item-cost">
-                        В пределах МКАД — 790 Р
+                        До 20км от МКАД — 1500 Р
                       </div>
                       <div className="information__item-text">
                         <p>Если габарит не превышает 175см и вес до 10 кг </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="information__item">
+                    <div className="information__yellow"></div>
+                    <div className="information__item-body">
+                      <div className="information__item-cost">
+                        Доставка по России
+                      </div>
+                      <div className="information__item-text">
+                        <p>
+                          Мы доставляем товары по всей России транспортными
+                          компаниями и СДЭК, наш менеджер отдельно произведет
+                          расчет.{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="information__item">
+                    <div className="information__red"></div>
+                    <div className="information__item-body">
+                      <div className="information__item-cost">
+                        До 100км от МКАД — 5000 Р
+                      </div>
+                      <div className="information__item-text">
+                        <p>
+                          Перед отправкой мы упаковываем изделия защитной
+                          пленкой, полиэтиленовым пакетом и картонной коробкой,
+                          чтобы вы получили товар чистым, без царапин и вмятин.
+                        </p>
+                        <p>
+                          Заказы из регионов доставляем до транспортной
+                          компании.
+                        </p>
                       </div>
                     </div>
                   </div>
