@@ -8,12 +8,12 @@ const Layout: FC = (): JSX.Element => {
   return (
     <div className="wrapper">
       <Header />
+      <Catalog />
       <div className="push"></div>
       <main className="main">
         <Outlet />
       </main>
       <Footer />
-      <Catalog />
     </div>
   );
 };
