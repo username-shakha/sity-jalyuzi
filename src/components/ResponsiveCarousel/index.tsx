@@ -9,7 +9,7 @@ const ResponsiveCarousel = ({
   images,
 }: ResponsiveCarouselProps): JSX.Element => {
   return (
-    <Carousel showThumbs={false} autoPlay>
+    <Carousel showThumbs={false} autoPlay autoFocus>
       {images.map((src, i) => (
         <div key={i}>
           <img src={src} alt="slider" />

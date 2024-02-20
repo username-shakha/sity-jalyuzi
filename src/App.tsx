@@ -4,6 +4,7 @@ import Layout from "./pages";
 import Home from "./pages/Home";
 import Delivery from "./pages/Delivery";
 import Contact from "./pages/Contact";
+import { PaymentMethods } from "./pages/Contact/PaymentMethods";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -12,6 +13,8 @@ const App: FC = (): JSX.Element => {
         <Route path="/" element={<Home />} index />
         <Route path="/contact" element={<Contact />} />
         <Route path="/delivery" element={<Delivery />} />
+        <Route path="/payment-methods" element={<PaymentMethods />} />
+        <Route path="/about" element={<PaymentMethods />} />
       </Route>
     </Routes>
   );

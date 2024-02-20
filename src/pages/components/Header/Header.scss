@@ -91,6 +91,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__button {
@@ -512,4 +514,32 @@
 
 .header.hide {
   display: none;
+}
+
+.widget {
+  width: fit-content;
+  background: linear-gradient(to bottom, #f4f4f4, #ddd);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.widget__head {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ff2e40;
+  margin-bottom: 5px;
+}
+
+.widget__logo-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .widget {
+    padding: 10px;
+  }
 }

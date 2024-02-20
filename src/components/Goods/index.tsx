@@ -27,7 +27,7 @@ const Goods = () => {
       <section className="we-produce">
         <div className="we-produce__container">
           <h2 className="we-produce__title title-box">
-            Мы производим {loading && <strong> Loading...</strong>}{" "}
+            Возможно вам, Понравится {loading && <strong> Loading...</strong>}{" "}
             {error && <strong> {error.message}...</strong>}
           </h2>
           <div className="we-produce__inner">
@@ -53,7 +53,7 @@ const Goods = () => {
       <section className="we-produce">
         <div className="we-produce__container">
           <h2 className="we-produce__title title-box">
-            Мы производим {loading && <strong> Loading...</strong>}{" "}
+            Мы производим Шторы{loading && <strong> Loading...</strong>}{" "}
             {error && <strong> {error.message}...</strong>}
           </h2>
           <div className="we-produce__inner">

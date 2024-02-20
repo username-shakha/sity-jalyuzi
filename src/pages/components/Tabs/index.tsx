@@ -13,15 +13,18 @@ export const TabsWithRouting = () => {
   }, [location]);
 
   const filtered = useMemo(() => {
-    return location.pathname === "/delivery"
-      ? nav1
-      : location.pathname !== "/"
-      ? nav2
-      : [];
-  }, [location]);
+    const filteredPages = nav1.filter((page) => page.path === state.pathname);
 
+    const page = filteredPages.find((el) => el);
+
+    return state.pathname === page?.path
+      ? nav1
+      : state.pathname === "/"
+      ? []
+      : nav2;
+  }, [state]);
   //   console.log(location);
-  console.log(filtered);
+  // console.log(filtered);
   return (
     <div className="page__container">
       <div className="page__navigation">
