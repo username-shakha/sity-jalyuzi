@@ -23,7 +23,7 @@ export const TabsWithRouting = () => {
       ? []
       : nav2;
   }, [state]);
-  //   console.log(location);
+  // console.log(location);
   // console.log(filtered);
   return (
     <div className="page__container">

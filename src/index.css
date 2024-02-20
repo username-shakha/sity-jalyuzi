@@ -33,6 +33,11 @@ body.no-scroll {
   overflow: hidden;
 }
 
+b,
+strong {
+  font-weight: bolder;
+}
+
 h1,
 h2,
 h3,
