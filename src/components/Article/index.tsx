@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./style.scss";
+
 const Article = () => {
   return (
     <section className="article">

@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import "./style.scss";
 import { nav1, nav2 } from "./constants";
 
 export const TabsWithRouting = () => {

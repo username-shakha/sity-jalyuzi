@@ -1,7 +1,6 @@
 import { FC, useState } from "react";
 import Sprite from "@/components/helper/Sprite/index";
-import "./Header.scss";
-import "./HeaderMedia.scss";
+
 import { Link } from "react-router-dom";
 
 interface mock {
@@ -119,7 +118,7 @@ const Header: FC = (): JSX.Element => {
       <div className="header__bottom">
         <div className="header__container">
           <div className="header__bottom-body">
-            <div className="header__bottom-left">
+            <div className="header__left">
               <button className="header__burger" data-modal="catalog-modal">
                 <div className="header__burger-img">
                   <img

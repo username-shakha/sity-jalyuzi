@@ -1,5 +1,5 @@
 import Collapse from "@/components/Collapse";
-import "./style.scss";
+
 import Sprite from "@/components/helper/Sprite";
 
 const Footer = () => {

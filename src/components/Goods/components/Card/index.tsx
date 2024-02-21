@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { IProducts } from "@/interfaces";
-import "./style.scss";
 
 interface ICardProps {
   product: IProducts;

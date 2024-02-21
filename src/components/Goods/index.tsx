@@ -3,8 +3,6 @@ import useFetch from "@/hooks/useFetch";
 import { IProducts } from "@/interfaces";
 import Card from "./components/Card";
 
-import "./style.scss";
-
 const Goods = () => {
   const URL = "https://657bc4a7394ca9e4af14b9a3.mockapi.io/products";
   //REST API CAll

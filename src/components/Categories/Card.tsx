@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import "./Card.scss";
-import "./CardMedia.scss";
 
 interface ICardProps {
   href: string;

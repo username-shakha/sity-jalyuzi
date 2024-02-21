@@ -1,6 +1,5 @@
 import Card from "./Card";
 import { categories_data } from "@/data";
-// import "./Categories.scss";
 
 const Categories = (): JSX.Element => {
   return (

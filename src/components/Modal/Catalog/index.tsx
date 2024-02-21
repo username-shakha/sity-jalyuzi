@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./style.scss";
 
 const Catalog = () => {
   const [state, setState] = useState(false);

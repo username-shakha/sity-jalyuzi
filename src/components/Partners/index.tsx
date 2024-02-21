@@ -1,5 +1,5 @@
 import { clientslogo } from "@/assets";
-import "./style.scss";
+
 const Partners = () => {
   return (
     <section className="clients">
@@ -10,7 +10,13 @@ const Partners = () => {
             clientslogo.map((image, index) => (
               <div key={index} className="clients__col">
                 <div className="clients__item">
-                  <div className="clients__item-photo">
+                  <div
+                    className={`clients__item-photo ${
+                      index === 1 || index === 7 || index === 11 || index === 13
+                        ? "clients__item-photo--big"
+                        : ""
+                    }`}
+                  >
                     <img src={image} alt="client" />
                   </div>
                 </div>
