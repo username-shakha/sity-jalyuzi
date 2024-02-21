@@ -24,22 +24,22 @@ const Goods = () => {
 
   return (
     <>
-      <section className="we-produce">
-        <div className="we-produce__container">
-          <h2 className="we-produce__title title-box">
+      <section className="like">
+        <div className="like__container">
+          <h2 className="like__title title-block">
             Возможно вам, Понравится {loading && <strong> Loading...</strong>}{" "}
             {error && <strong> {error.message}...</strong>}
           </h2>
-          <div className="we-produce__inner">
+          <div className="like__inner">
             {jalousie?.map((product: IProducts) => (
               <Card key={product.id} product={product} />
             ))}
-            <div className="we-produce__button">
-              <button className="we-produce__btn">
+            <div className="like__button">
+              <button className="like__btn">
                 <a href="">
-                  <span className="we-produce__btn-text">Показать еще</span>
+                  <span className="like__btn-text">Показать еще</span>
                 </a>
-                <div className="we-produce__btn-arrow">
+                <div className="like__btn-arrow">
                   <svg>
                     <use xlinkHref="#arrowduwn"></use>
                   </svg>
@@ -50,22 +50,22 @@ const Goods = () => {
         </div>
       </section>
 
-      <section className="we-produce">
-        <div className="we-produce__container">
-          <h2 className="we-produce__title title-box">
+      <section className="like">
+        <div className="like__container">
+          <h2 className="like__title title-block">
             Мы производим Шторы{loading && <strong> Loading...</strong>}{" "}
             {error && <strong> {error.message}...</strong>}
           </h2>
-          <div className="we-produce__inner">
+          <div className="like__inner">
             {curtains?.map((product: IProducts) => (
               <Card key={product.id} product={product} />
             ))}
-            <div className="we-produce__button">
-              <button className="we-produce__btn">
+            <div className="like__button">
+              <button className="like__btn">
                 <a href="">
-                  <span className="we-produce__btn-text">Показать еще</span>
+                  <span className="like__btn-text">Показать еще</span>
                 </a>
-                <div className="we-produce__btn-arrow">
+                <div className="like__btn-arrow">
                   <svg>
                     <use xlinkHref="#arrowduwn"></use>
                   </svg>

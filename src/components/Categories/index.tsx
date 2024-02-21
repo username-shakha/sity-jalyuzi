@@ -1,15 +1,15 @@
 import Card from "./Card";
 import { categories_data } from "@/data";
-import "./Categories.scss";
+// import "./Categories.scss";
 
 const Categories = (): JSX.Element => {
   return (
-    <section className="categories">
-      <div className="categories__container">
-        <h2 className="categories__title title-box">
+    <section className="product">
+      <div className="product__container">
+        <h2 className="like__title title-block">
           Самые покупаемые категории товаров
         </h2>
-        <div className="categories__inner">
+        <div className="product__inner">
           {!!categories_data.length &&
             categories_data.map((category) => (
               <Card
