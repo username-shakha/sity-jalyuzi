@@ -12,6 +12,7 @@ import { Services } from "./pages/Delivery/Services";
 import { QuestionsAnswers } from "./pages/Delivery/QuestionsAnswers";
 import { About } from "./pages/Contact/About";
 import { Requisites } from "./pages/Contact/Requisites";
+import { Documents } from "./pages/Contact/Documents";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -27,6 +28,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/questions-answers" element={<QuestionsAnswers />} />
         <Route path="/about" element={<About />} />
         <Route path="/requisites" element={<Requisites />} />
+        <Route path="/documents" element={<Documents />} />
       </Route>
     </Routes>
   );
