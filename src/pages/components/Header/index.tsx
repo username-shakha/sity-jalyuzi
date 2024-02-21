@@ -101,13 +101,10 @@ const Header: FC = (): JSX.Element => {
                     Пригласить на тендер
                   </button>
                 </div>
-                <Link className="widget" to="/contact">
-                  <div>
-                    <div className="widget__head">ЗА</div>
-
-                    <div className="widget__logo-text">
-                      ЧЕСТНЫЙ <br /> БИЗНЕС
-                    </div>
+                <Link className="zchbLink" to="/contact">
+                  <div className="zchbWidgetIcon3">
+                    <div className="zchbHead">ЗА</div>
+                    <div className="zchbLogoTextww">ЧЕСТНЫЙ БИЗНЕС</div>
                   </div>
                 </Link>
               </div>

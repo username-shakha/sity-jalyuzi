@@ -311,6 +311,7 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 
 .header__button {
@@ -10084,4 +10085,178 @@ label {
 .fullscreen img {
   max-width: 90%;
   max-height: 90%;
+}
+
+.zchbWidget {
+  font-family: arial;
+  width: 300px;
+  background: #eee;
+  border-radius: 6px;
+  border: 2px solid #cacaca;
+  border-bottom: 0;
+  color: #666;
+  white-space: normal;
+  text-align: left;
+}
+
+.zchbWidgetSmall {
+  font-family: arial;
+  width: 300px;
+  background: #eee;
+  border-radius: 6px;
+  border: 2px solid #cacaca;
+  color: #666;
+  white-space: normal;
+  text-align: left;
+}
+
+.zchbWidgetIcon {
+  font-family: arial;
+  width: 42px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #cacaca;
+  color: #666;
+  white-space: normal;
+  text-align: center;
+}
+
+.zchbWidgetIcon2 {
+  font-family: arial;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #cacaca;
+  color: #666;
+  white-space: normal;
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: left;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAnCAYAAACrDdDdAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOJgAADiYBou8l/AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPNSURBVGiB3ZnPbxtVEMc/s07aIjWIEgvbR4qEWhU1IXYkbqjigCBp1Max2wokUKgU9b/ofwGpQCCSJmixnaqUUpRfvSEldg5UOUUq4uJ6rTYQIZLYqXc4FJfQrn/tGjvme3wzb958NLtv982D/4mS6exAajW3cOvnX4+Vx4x2JtQsJdPZATDmVXinUDwyXwaUdifmVYnV/Jsi9gLw8tNB5aeugu/djoZLrGUjYhvzwEvPGVXvdCycY8X+0Z+26nBHwtUDFhsM3e04uBpg27bqUGwwdBfA19LMPGpuJd+PYS8AvQ7mbdDhsb/BoIN2y7mVfL9dAywaCS3vH+wIODdg0AFwbsHggMN5AYMDDFcLTISzo+HgUrUYBxKuGWBwAD8FqTWrT9FFPILBM6eCZPrBkLm+fqgZSbrR3Eq+X+3KYKDD9YLBPrhkOncZ5Kax679xe2PjcDOSbUSpNavPNux5qlSs2ubhJAMguZr7BJgEDFF9b2erJ9VKwNSa1ae2LgB+B/O2bTDSSMXKMhKruXGEa/z7EX1/Z6sn2QrAesBiA8FFN7ENhLdwPpEPbf9+dGYyrd1uAtejWmAinHULBmBEw4EJRT9zMorIaK/mvvkvABMZ63QVsB23j+J+CYCqSmrN+hRlwtlLkw81eGkiInteFisrkbFOi+oiFcBQGYkOBha8rmMAiIiODgSuoFxz9FKJ+snPLC9rl9cFWwUG+941EdF7kcAV0K+dXXVssyc/6wUwlcmeFNUfaQEYPLORXBWxS/eD4zUAXVUwlcmeVDWWgKCDuelg4LBLxuNSKt0PjiM65TxFY7/1WNcbAUyksyeqgBVAY80Ggyo/zqapvq5Xra9U+LDCRPPYH4EPzpyRx9UWSKSzJwRjmcpg0Wgk9H1jadenih3neFxKj38JfCzKtJNdIb551JquVsF2gkGNdnoZELju6CBc2HzRmjJNfe500W4wqOOu4Mk7GPgImHF0UC76juc/v6r6NNZBAIMGDqumqb6u49aUwiVHB+XLe5HA5TcyD14XjCUg5OBVEGFsNBy85TLfhtTQSXwyrd1+yc2iEq0QzFR4Gwg4mHdFjPOj4VfuuEnUjRpuM5im+nyvWdMoFxuYVhQh2qqKleWqhzKZ1m4/lgmcq8O95RUry9Xl40RE9h4SiAM3argWVYi3Aww83KxORGSv9MKjCwg3K7gUDNVzY+Hgd27X8CpP18bxU6eKpSOPYg6ARRVi5wdDP3iJ71VN6Vua6+uHfLu936KM8ARsrJ0VK6tpTdnbGxuHd7Z6ZkG/aMUHuh79BT0L5BmQN9/5AAAAAElFTkSuQmCC) -8px
+    0 no-repeat;
+}
+
+.zchbWidgetIcon3 {
+  font-family: arial;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #cacaca;
+  color: #666;
+  white-space: normal;
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: left;
+}
+
+.zchbWidgetIcon3 > .zchbHead,
+.zchbWidgetIcon2 > .zchbHead {
+  color: #ff2e40;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: 3px;
+  top: 12px;
+  line-height: 0;
+}
+
+.zchbWidgetIcon3 > .zchbLogoTextww,
+.zchbWidgetIcon2 > .zchbLogoText {
+  color: #000;
+  font-size: 7px;
+  font-weight: 400;
+  position: absolute;
+  left: 3px;
+  top: 20px;
+  line-height: 8px;
+}
+
+.zchbSmall > big {
+  font-size: 15px;
+  text-align: center;
+}
+
+.zchbHead {
+  min-height: 40px;
+  color: #000;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.zchbHead big {
+  color: #333;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.zchbHead big span {
+  color: #ff2e40;
+}
+
+.zchbIcon big {
+  margin-left: 0;
+}
+
+.zchbBtn {
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.zchbBtn > a:link,
+.zchbBtn > a:active,
+.zchbBtn > a:visited,
+.zchbBtn > span {
+  display: block;
+  margin: 5px auto;
+  width: 80%;
+  background: #ff2e40;
+  font-size: 13px;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.zchbBtn > a:hover,
+.zchbBtn > span:hover {
+  background: #fd4040;
+  text-decoration: none;
+}
+
+.zchbBody > div {
+  margin: auto;
+  padding: 5px 10%;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 19px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.zchbBody small {
+  font-size: 10px;
+  display: block;
+  line-height: 1;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.zchbFoo {
+  height: 7px;
+  background: #598ed0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 300px;
+  margin: -2px auto auto -2px;
+}
+
+.zchbLink {
+  text-decoration: none;
 }
