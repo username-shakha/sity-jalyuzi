@@ -19,7 +19,7 @@ export const TabsWithRouting = () => {
 
     return state.pathname === page?.path
       ? nav1
-      : state.pathname === "/"
+      : state.pathname === "/" || state.pathname === "/details/3"
       ? []
       : nav2;
   }, [state]);
