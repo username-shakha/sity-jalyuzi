@@ -11,6 +11,7 @@ import { Guarantees } from "./pages/Delivery/Guarantees";
 import { Services } from "./pages/Delivery/Services";
 import { QuestionsAnswers } from "./pages/Delivery/QuestionsAnswers";
 import { About } from "./pages/Contact/About";
+import { Requisites } from "./pages/Contact/Requisites";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -25,6 +26,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/services" element={<Services />} />
         <Route path="/questions-answers" element={<QuestionsAnswers />} />
         <Route path="/about" element={<About />} />
+        <Route path="/requisites" element={<Requisites />} />
       </Route>
     </Routes>
   );
