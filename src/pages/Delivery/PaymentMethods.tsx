@@ -1,5 +1,4 @@
 import { FC } from "react";
-import "../Delivery/style.scss";
 
 export const PaymentMethods: FC = () => {
   return (

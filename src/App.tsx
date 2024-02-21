@@ -9,6 +9,7 @@ import { PaymentMethods } from "./pages/Delivery/PaymentMethods";
 import { ReturnGoods } from "./pages/Delivery/ReturnGoods";
 import { Guarantees } from "./pages/Delivery/Guarantees";
 import { Services } from "./pages/Delivery/Services";
+import { QuestionsAnswers } from "./pages/Delivery/QuestionsAnswers";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -21,6 +22,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/return-goods" element={<ReturnGoods />} />
         <Route path="/guarantees" element={<Guarantees />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/questions-answers" element={<QuestionsAnswers />} />
       </Route>
     </Routes>
   );
