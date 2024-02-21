@@ -1,46 +1,51 @@
-Sity Jalyuzi
-Description
+# Sity Jalyuzi
+
+**Description**
 
 Sity Jalyuzi is a smart blinds system that allows you to control the lighting and temperature in your home using your smartphone.
 
-Features:
+**Features:**
 
-Control your blinds using the app
-Automatic opening and closing of blinds on a schedule
-Set up scenarios to control your blinds depending on the time of day, weather, and other conditions
-Voice control your blinds using Amazon Alexa and Google Assistant
-Getting Started:
+- Control your blinds using the app
+- Automatic opening and closing of blinds on a schedule
+- Set up scenarios to control your blinds depending on the time of day, weather, and other conditions
+- Voice control your blinds using Amazon Alexa and Google Assistant
 
-Install the Sity Jalyuzi app on your smartphone.
-Create an account and log in.
-Add a new device following the instructions in the app.
-Connect your blinds to a Wi-Fi network.
-Set up a schedule and scenarios to control your blinds.
-Support:
+**Getting Started:**
+
+1. Install the Sity Jalyuzi app on your smartphone.
+2. Create an account and log in.
+3. Add a new device following the instructions in the app.
+4. Connect your blinds to a Wi-Fi network.
+5. Set up a schedule and scenarios to control your blinds.
+
+**Support:**
 
 If you have any problems using the Sity Jalyuzi system, please visit our website for instructions and frequently asked questions.
-You can also contact our support team via email at [redacted email address].
-License:
+You can also contact our support team via email at [It will appear soon].
+
+**License:**
 
 Sity Jalyuzi is licensed under the MIT license.
 
-Links:
+## Links:
 
-Website: [https://sity-jalyuzi.netlify.app/]
-App: [It will appear soon]
-Documentation: [It will appear soon]
-Support: [It will appear soon]
-Developers:
+- Website: [https://sity-jalyuzi.netlify.app/]
+- App: [It will appear soon]
+- Documentation: [It will appear soon]
+- Support: [It will appear soon]
 
-Username-Shakha
-Contributing:
+**Developers:**
+
+- Username-Shakha
+
+**Contributing:**
 
 If you would like to contribute to the development of Sity Jalyuzi, you can submit a pull request on GitHub.
 
-Acknowledgements:
+**Acknowledgements:**
 
 To everyone who has contributed to the development of Sity Jalyuzi.
-Please note that some of the links in the original text were redacted as they were not working.
 
 ## How to Run the Project
 
@@ -56,7 +61,7 @@ Please note that some of the links in the original text were redacted as they we
     npm run dev
     ```
 
-   After executing this command, the project will be available at [http://localhost:3000/](http://localhost:3000/). Changes in the source files will automatically trigger a reload of the application.
+   After executing this command, the project will be available at [http://localhost:5173/]. Changes in the source files will automatically trigger a reload of the application.
 
 ## Additional Commands
 
