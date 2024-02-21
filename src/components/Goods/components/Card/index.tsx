@@ -1,4 +1,4 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { IProducts } from "@/interfaces";
 import "./style.scss";
 
@@ -7,15 +7,15 @@ interface ICardProps {
 }
 
 const Card = ({ product }: ICardProps) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="we-produce__col">
       <div
         className="we-produce__item"
-        // onClick={() => {
-        //   if (product) navigate(`/details/${product.id}`);
-        // }}
+        onClick={() => {
+          if (product) navigate(`/details/${product.id}`);
+        }}
       >
         <div className="we-produce__item-photo">
           <img
