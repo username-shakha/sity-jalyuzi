@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "./style.scss";
+import "../Contact/style.scss";
 
 export const ReturnGoods: FC = () => {
   return (

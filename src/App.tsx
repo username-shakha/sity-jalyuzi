@@ -2,10 +2,12 @@ import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./pages";
 import Home from "./pages/Home";
-import Delivery from "./pages/Delivery";
+
 import Contact from "./pages/Contact";
-import { PaymentMethods } from "./pages/Contact/PaymentMethods";
-import { ReturnGoods } from "./pages/Contact/ReturnGoods";
+import Delivery from "./pages/Delivery";
+import { PaymentMethods } from "./pages/Delivery/PaymentMethods";
+import { ReturnGoods } from "./pages/Delivery/ReturnGoods";
+import { Guarantees } from "./pages/Delivery/Guarantees";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -16,6 +18,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/payment-methods" element={<PaymentMethods />} />
         <Route path="/return-goods" element={<ReturnGoods />} />
+        <Route path="/guarantees" element={<Guarantees />} />
       </Route>
     </Routes>
   );
