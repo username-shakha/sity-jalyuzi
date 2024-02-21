@@ -56,7 +56,7 @@ Please note that some of the links in the original text were redacted as they we
     npm run dev
     ```
 
-   After executing this command, the project will be available at [http://localhost:3000/](http://localhost:3000/). Changes in the source files will automatically trigger a reload of the application.
+   After executing this command, the project will be available at [http://localhost:3000/](http://localhost:5173/). Changes in the source files will automatically trigger a reload of the application.
 
 ## Additional Commands
 
