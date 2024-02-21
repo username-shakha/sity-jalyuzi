@@ -14,25 +14,30 @@ import { About } from "./pages/Contact/About";
 import { Requisites } from "./pages/Contact/Requisites";
 import { Documents } from "./pages/Contact/Documents";
 import { Vacancy } from "./pages/Contact/Vacancy";
+import { Details } from "./pages/Details";
+import { ContextCartProvider } from "./context/ContextCart";
 
 const App: FC = (): JSX.Element => {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route path="/" element={<Home />} index />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/payment-methods" element={<PaymentMethods />} />
-        <Route path="/return-goods" element={<ReturnGoods />} />
-        <Route path="/guarantees" element={<Guarantees />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/questions-answers" element={<QuestionsAnswers />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/requisites" element={<Requisites />} />
-        <Route path="/documents" element={<Documents />} />
-        <Route path="/vacancy" element={<Vacancy />} />
-      </Route>
-    </Routes>
+    <ContextCartProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} index />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/payment-methods" element={<PaymentMethods />} />
+          <Route path="/return-goods" element={<ReturnGoods />} />
+          <Route path="/guarantees" element={<Guarantees />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/questions-answers" element={<QuestionsAnswers />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/requisites" element={<Requisites />} />
+          <Route path="/documents" element={<Documents />} />
+          <Route path="/vacancy" element={<Vacancy />} />
+          <Route path="/details/:id" element={<Details />} />
+        </Route>
+      </Routes>
+    </ContextCartProvider>
   );
 };
 
