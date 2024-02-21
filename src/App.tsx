@@ -13,6 +13,7 @@ import { QuestionsAnswers } from "./pages/Delivery/QuestionsAnswers";
 import { About } from "./pages/Contact/About";
 import { Requisites } from "./pages/Contact/Requisites";
 import { Documents } from "./pages/Contact/Documents";
+import { Vacancy } from "./pages/Contact/Vacancy";
 
 const App: FC = (): JSX.Element => {
   return (
@@ -29,6 +30,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/about" element={<About />} />
         <Route path="/requisites" element={<Requisites />} />
         <Route path="/documents" element={<Documents />} />
+        <Route path="/vacancy" element={<Vacancy />} />
       </Route>
     </Routes>
   );
